@@ -1,0 +1,33 @@
+<scene>
+  <lights>
+    <light type="SPOT" posX="0" posY="0" posZ="0" dirX="0" dirY="0" dirZ="1" phi="45" theta="90"/>
+  </lights>
+  <group>
+    <translate X="0" Y="-0.5" Z="0" />
+    <rotate angle="-90" axisX="1" axisY="0" axisZ="0"/>
+    <models>
+      <model file="controlPoint" texture="satRing.png"/>
+    </models>
+    <group>
+      <rotate angle="-90" axisX="0" axisY="0" axisZ="1"/>
+      <scale X="0.2" Y="0.2" Z="0.2" />
+      <models>
+        <model file="teapot" texture="sky.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group>
+     <translate X="0" Y="0" Z="5"/>
+     <rotate angle="45" axisX="0" axisY="1" axisZ="0"/>
+     <models>
+       <model file="planeta" diffR="0.9" diffG="0.0" diffB="0.1" ambR="0.9" ambG="0.0" ambB="0.1" emR="0.0" emG="0.0" emB="0.0" specR="0.5" specG="0.5" specB="0.5" shine="32.0"/>
+     </models>
+   </group>
+   <group>
+      <translate X="0" Y="0" Z="-5"/>
+      <rotate angle="45" axisX="0" axisY="1" axisZ="0"/>
+      <models>
+        <model file="planeta" diffR="0.9" diffG="0.0" diffB="0.1" ambR="0.9" ambG="0.0" ambB="0.1" emR="0.0" emG="0.0" emB="0.0" specR="0.5" specG="0.5" specB="0.5" shine="32.0"/>
+      </models>
+    </group>
+</scene>

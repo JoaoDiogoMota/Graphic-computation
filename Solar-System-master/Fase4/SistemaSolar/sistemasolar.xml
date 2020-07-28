@@ -1,0 +1,690 @@
+<scene>
+  <lights>
+    <light type="POINT" posX="20" posY="0" posZ="0" />
+    <light type="POINT" posX="0" posY="0" posZ="20" />
+    <light type="POINT" posX="0" posY="20" posZ="0" />
+    <light type="POINT" posX="-20" posY="0" posZ="0" />
+    <light type="POINT" posX="0" posY="0" posZ="-20" />
+    <light type="POINT" posX="0" posY="-20" posZ="0" />
+    <light type="POINT" posX="0" posY="-20" posZ="0" />
+  </lights>
+  <group> <!-- SOL -->
+    <rotate time="15" axisX="0" axisY="1" axisZ="0" />
+    <scale X="20" Y="20" Z="20"/>
+    <models>
+      <model file="planeta" texture="sun.jpg" ambR="1.0" ambG="1.0" ambB="1.0" diffR="1.0" diffG="1.0" diffB="1.0"/>
+    </models>
+  </group>
+  <group> <!-- CINTURA CONTROL POINT -->
+    <rotate angle="90" axisX="1" axisY="0" axisZ="0"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- CINTURA -->
+      <rotate time="5" axisX="0" axisY="0" axisZ="1" />
+      <models>
+        <model file="cintura" texture="beruto.png" diffR="0.1" diffG="0.1" diffB="0.1"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- MERCÚRIO CONTROL POINT -->
+    <translate time="5">
+      <point X="-13.000000" Y="0" Z="22.516660"/>
+      <point X="-22.516660" Y="0" Z="13.000000"/>
+      <point X="-26.000000" Y="0" Z="0.000000"/>
+      <point X="-22.516660" Y="0" Z="-13.000000"/>
+      <point X="-13.000000" Y="0" Z="-22.516660"/>
+      <point X="0.000000" Y="0" Z="-26.000000"/>
+      <point X="13.000000" Y="0" Z="-22.516660"/>
+      <point X="22.516660" Y="0" Z="-13.000000"/>
+      <point X="26.000000" Y="0" Z="0.000000"/>
+      <point X="22.516660" Y="0" Z="13.000000"/>
+      <point X="13.000000" Y="0" Z="22.516660"/>
+      <point X="0.000000" Y="0" Z="26.000000"/>
+    </translate>
+    <rotate angle="-0.1" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="0.28" Y="0.28" Z="0.28"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- MERCÚRIO -->
+      <rotate time="167" axisX="0" axisY="1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="mercury.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- VÉNUS CONTROL POINT -->
+    <translate time="13">
+      <point X="-15.250000" Y="0" Z="26.413775"/>
+      <point X="-26.413775" Y="0" Z="15.250000"/>
+      <point X="-30.500000" Y="0" Z="0.000000"/>
+      <point X="-26.413775" Y="0" Z="-15.250000"/>
+      <point X="-15.250000" Y="0" Z="-26.413775"/>
+      <point X="0.000000" Y="0" Z="-30.500000"/>
+      <point X="15.250000" Y="0" Z="-26.413775"/>
+      <point X="26.413775" Y="0" Z="-15.250000"/>
+      <point X="30.500000" Y="0" Z="0.000000"/>
+      <point X="26.413775" Y="0" Z="15.250000"/>
+      <point X="15.250000" Y="0" Z="26.413775"/>
+      <point X="0.000000" Y="0" Z="30.500000"/>
+    </translate>
+    <rotate angle="-177" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="0.7" Y="0.7" Z="0.7"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- VENUS -->
+      <rotate time="691" axisX="0" axisY="-1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="venus.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- TERRA CONTROL POINT -->
+    <translate time="21">
+      <point X="-17.500000" Y="0" Z="30.310889"/>
+      <point X="-30.310889" Y="0" Z="17.500000"/>
+      <point X="-35.000000" Y="0" Z="0.000000"/>
+      <point X="-30.310889" Y="0" Z="-17.500000"/>
+      <point X="-17.500000" Y="0" Z="-30.310889"/>
+      <point X="0.000000" Y="0" Z="-35.000000"/>
+      <point X="17.500000" Y="0" Z="-30.310889"/>
+      <point X="30.310889" Y="0" Z="-17.500000"/>
+      <point X="35.000000" Y="0" Z="0.000000"/>
+      <point X="30.310889" Y="0" Z="17.500000"/>
+      <point X="17.500000" Y="0" Z="30.310889"/>
+      <point X="0.000000" Y="0" Z="35.000000"/>
+    </translate>
+    <rotate angle="-23" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="0.73" Y="0.73" Z="0.73"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- TERRA -->
+      <rotate time="3" axisX="0" axisY="1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="earth.jpg"/>
+      </models>
+    </group>
+    <group> <!-- LUA -->
+      <translate time="79.5">
+        <point X="-0.750000" Y="0" Z="1.299038"/>
+        <point X="-1.299038" Y="0" Z="0.750000"/>
+        <point X="-1.500000" Y="0" Z="0.000000"/>
+        <point X="-1.299038" Y="0" Z="-0.750000"/>
+        <point X="-0.750000" Y="0" Z="-1.299038"/>
+        <point X="0.000000" Y="0" Z="-1.500000"/>
+        <point X="0.750000" Y="0" Z="-1.299038"/>
+        <point X="1.299038" Y="0" Z="-0.750000"/>
+        <point X="1.500000" Y="0" Z="0.000000"/>
+        <point X="1.299038" Y="0" Z="0.750000"/>
+        <point X="0.750000" Y="0" Z="1.299038"/>
+        <point X="0.000000" Y="0" Z="1.500000"/>
+      </translate>
+      <rotate time="79.5" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.16" Y="0.16" Z="0.16"/>
+      <models>
+        <model file="lua" texture="moon.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- MARTE CONTROL POINT -->
+    <translate time="39">
+      <point X="-21.250000" Y="0" Z="36.806080"/>
+      <point X="-36.806080" Y="0" Z="21.250000"/>
+      <point X="-42.500000" Y="0" Z="0.000000"/>
+      <point X="-36.806080" Y="0" Z="-21.250000"/>
+      <point X="-21.250000" Y="0" Z="-36.806080"/>
+      <point X="0.000000" Y="0" Z="-42.500000"/>
+      <point X="21.250000" Y="0" Z="-36.806080"/>
+      <point X="36.806080" Y="0" Z="-21.250000"/>
+      <point X="42.500000" Y="0" Z="0.000000"/>
+      <point X="36.806080" Y="0" Z="21.250000"/>
+      <point X="21.250000" Y="0" Z="36.806080"/>
+      <point X="0.000000" Y="0" Z="42.500000"/>
+    </translate>
+    <rotate angle="-25" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="0.39" Y="0.39" Z="0.39"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- MARTE -->
+      <rotate time="3" axisX="0" axisY="1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="mars.jpg"/>
+      </models>
+    </group>
+    <group> <!-- PHOBOS -->
+      <translate time="1" >
+        <point X="1.299038" Y="0" Z="-0.750000"/>
+        <point X="1.500000" Y="0" Z="0.000000"/>
+        <point X="1.299038" Y="0" Z="0.750000"/>
+        <point X="0.750000" Y="0" Z="1.299038"/>
+        <point X="0.000000" Y="0" Z="1.500000"/>
+        <point X="-0.750000" Y="0" Z="1.299038"/>
+        <point X="-1.299038" Y="0" Z="0.750000"/>
+        <point X="-1.500000" Y="0" Z="0.000000"/>
+        <point X="-1.299038" Y="0" Z="-0.750000"/>
+        <point X="-0.750000" Y="0" Z="-1.299038"/>
+        <point X="0.000000" Y="0" Z="-1.500000"/>
+        <point X="0.750000" Y="0" Z="-1.299038"/>
+      </translate>
+      <rotate time="1" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.16" Y="0.16" Z="0.16"/>
+      <models>
+        <model file="lua" texture="phobos.jpg"/>
+      </models>
+    </group>
+    <group> <!-- DEIMOS -->
+      <translate time="3.5">
+        <point X="-1.000000" Y="0" Z="1.732051"/>
+        <point X="-1.732051" Y="0" Z="1.000000"/>
+        <point X="-2.000000" Y="0" Z="0.000000"/>
+        <point X="-1.732051" Y="0" Z="-1.000000"/>
+        <point X="-1.000000" Y="0" Z="-1.732051"/>
+        <point X="0.000000" Y="0" Z="-2.000000"/>
+        <point X="1.000000" Y="0" Z="-1.732051"/>
+        <point X="1.732051" Y="0" Z="-1.000000"/>
+        <point X="2.000000" Y="0" Z="0.000000"/>
+        <point X="1.732051" Y="0" Z="1.000000"/>
+        <point X="1.000000" Y="0" Z="1.732051"/>
+        <point X="0.000000" Y="0" Z="2.000000"/>
+      </translate>
+      <rotate time="3.5" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.16" Y="0.16" Z="0.16"/>
+      <models>
+        <model file="lua" texture="deimos.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- JÚPITER CONTROL POINT -->
+    <translate time="246">
+      <point X="-47.500000" Y="0" Z="82.272413"/>
+      <point X="-82.272413" Y="0" Z="47.500000"/>
+      <point X="-95.000000" Y="0" Z="0.000000"/>
+      <point X="-82.272413" Y="0" Z="-47.500000"/>
+      <point X="-47.500000" Y="0" Z="-82.272413"/>
+      <point X="0.000000" Y="0" Z="-95.000000"/>
+      <point X="47.500000" Y="0" Z="-82.272413"/>
+      <point X="82.272413" Y="0" Z="-47.500000"/>
+      <point X="95.000000" Y="0" Z="0.000000"/>
+      <point X="82.272413" Y="0" Z="47.500000"/>
+      <point X="47.500000" Y="0" Z="82.272413"/>
+      <point X="0.000000" Y="0" Z="95.000000"/>
+    </translate>
+    <rotate angle="-3" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="8.03" Y="8.03" Z="8.03"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- JUPITER -->
+      <rotate time="1" axisX="0" axisY="1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="jupiter.jpg"/>
+      </models>
+    </group>
+    <group> <!-- IO -->
+      <translate time="5">
+        <point X="-0.750000" Y="0" Z="1.299038"/>
+        <point X="-1.299038" Y="0" Z="0.750000"/>
+        <point X="-1.500000" Y="0" Z="0.000000"/>
+        <point X="-1.299038" Y="0" Z="-0.750000"/>
+        <point X="-0.750000" Y="0" Z="-1.299038"/>
+        <point X="0.000000" Y="0" Z="-1.500000"/>
+        <point X="0.750000" Y="0" Z="-1.299038"/>
+        <point X="1.299038" Y="0" Z="-0.750000"/>
+        <point X="1.500000" Y="0" Z="0.000000"/>
+        <point X="1.299038" Y="0" Z="0.750000"/>
+        <point X="0.750000" Y="0" Z="1.299038"/>
+        <point X="0.000000" Y="0" Z="1.500000"/>
+      </translate>
+      <rotate time="5" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="makemake.jpg"/>
+      </models>
+    </group>
+    <group> <!-- EUROPA -->
+      <translate time="10">
+        <point X="0.000000" Y="0" Z="-2.000000"/>
+        <point X="1.000000" Y="0" Z="-1.732051"/>
+        <point X="1.732051" Y="0" Z="-1.000000"/>
+        <point X="2.000000" Y="0" Z="0.000000"/>
+        <point X="1.732051" Y="0" Z="1.000000"/>
+        <point X="1.000000" Y="0" Z="1.732051"/>
+        <point X="0.000000" Y="0" Z="2.000000"/>
+        <point X="-1.000000" Y="0" Z="1.732051"/>
+        <point X="-1.732051" Y="0" Z="1.000000"/>
+        <point X="-2.000000" Y="0" Z="0.000000"/>
+        <point X="-1.732051" Y="0" Z="-1.000000"/>
+        <point X="-1.000000" Y="0" Z="-1.732051"/>
+      </translate>
+      <rotate time="10" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="haumea.jpg"/>
+      </models>
+    </group>
+    <group> <!-- CALISTO -->
+      <translate time="48">
+        <point X="-2.165064" Y="0" Z="-1.250000"/>
+        <point X="-1.250000" Y="0" Z="-2.165064"/>
+        <point X="0.000000" Y="0" Z="-2.500000"/>
+        <point X="1.250000" Y="0" Z="-2.165064"/>
+        <point X="2.165064" Y="0" Z="-1.250000"/>
+        <point X="2.500000" Y="0" Z="0.000000"/>
+        <point X="2.165064" Y="0" Z="1.250000"/>
+        <point X="1.250000" Y="0" Z="2.165064"/>
+        <point X="0.000000" Y="0" Z="2.500000"/>
+        <point X="-1.250000" Y="0" Z="2.165064"/>
+        <point X="-2.165064" Y="0" Z="1.250000"/>
+        <point X="-2.500000" Y="0" Z="0.000000"/>
+      </translate>
+      <rotate time="48" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="eris.jpg"/>
+      </models>
+    </group>
+    <group> <!-- GANIMEDES -->
+      <translate time="21">
+        <point X="2.598076" Y="0" Z="1.500000"/>
+        <point X="1.500000" Y="0" Z="2.598076"/>
+        <point X="0.000000" Y="0" Z="3.000000"/>
+        <point X="-1.500000" Y="0" Z="2.598076"/>
+        <point X="-2.598076" Y="0" Z="1.500000"/>
+        <point X="-3.000000" Y="0" Z="0.000000"/>
+        <point X="-2.598076" Y="0" Z="-1.500000"/>
+        <point X="-1.500000" Y="0" Z="-2.598076"/>
+        <point X="0.000000" Y="0" Z="-3.000000"/>
+        <point X="1.500000" Y="0" Z="-2.598076"/>
+        <point X="2.598076" Y="0" Z="-1.500000"/>
+        <point X="3.000000" Y="0" Z="0.000000"/>
+      </translate>
+      <rotate time="21" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="ceres.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- SATURNO CONTROL POINT -->
+    <translate time="612">
+      <point X="-81.250000" Y="0" Z="140.729128"/>
+      <point X="-140.729128" Y="0" Z="81.250000"/>
+      <point X="-162.500000" Y="0" Z="0.000000"/>
+      <point X="-140.729128" Y="0" Z="-81.250000"/>
+      <point X="-81.250000" Y="0" Z="-140.729128"/>
+      <point X="0.000000" Y="0" Z="-162.500000"/>
+      <point X="81.250000" Y="0" Z="-140.729128"/>
+      <point X="140.729128" Y="0" Z="-81.250000"/>
+      <point X="162.500000" Y="0" Z="0.000000"/>
+      <point X="140.729128" Y="0" Z="81.250000"/>
+      <point X="81.250000" Y="0" Z="140.729128"/>
+      <point X="0.000000" Y="0" Z="162.500000"/>
+    </translate>
+    <rotate angle="-23" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="6.69" Y="6.69" Z="6.69"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- SATURNO -->
+      <rotate time="1" axisX="0" axisY="1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="saturn.jpg"/>
+      </models>
+      <group> <!-- anel -->
+        <models>
+          <model file="anel" texture="satRing.png"/>
+        </models>
+      </group>
+    </group>
+    <group> <!-- MIMES -->
+      <translate time="2.5">
+        <point X="-1.250000" Y="0" Z="2.165064"/>
+        <point X="-2.165064" Y="0" Z="1.250000"/>
+        <point X="-2.500000" Y="0" Z="0.000000"/>
+        <point X="-2.165064" Y="0" Z="-1.250000"/>
+        <point X="-1.250000" Y="0" Z="-2.165064"/>
+        <point X="0.000000" Y="0" Z="-2.500000"/>
+        <point X="1.250000" Y="0" Z="-2.165064"/>
+        <point X="2.165064" Y="0" Z="-1.250000"/>
+        <point X="2.500000" Y="0" Z="0.000000"/>
+        <point X="2.165064" Y="0" Z="1.250000"/>
+        <point X="1.250000" Y="0" Z="2.165064"/>
+        <point X="0.000000" Y="0" Z="2.500000"/>
+      </translate>
+      <rotate time="2.5" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="eris.jpg"/>
+      </models>
+    </group>
+    <group> <!-- ENCÉLADO -->
+      <translate time="4">
+        <point X="-2.598076" Y="0" Z="-1.500000"/>
+        <point X="-1.500000" Y="0" Z="-2.598076"/>
+        <point X="0.000000" Y="0" Z="-3.000000"/>
+        <point X="1.500000" Y="0" Z="-2.598076"/>
+        <point X="2.598076" Y="0" Z="-1.500000"/>
+        <point X="3.000000" Y="0" Z="0.000000"/>
+        <point X="2.598076" Y="0" Z="1.500000"/>
+        <point X="1.500000" Y="0" Z="2.598076"/>
+        <point X="0.000000" Y="0" Z="3.000000"/>
+        <point X="-1.500000" Y="0" Z="2.598076"/>
+        <point X="-2.598076" Y="0" Z="1.500000"/>
+        <point X="-3.000000" Y="0" Z="0.000000"/>
+      </translate>
+      <rotate time="4" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="ceres.jpg"/>
+      </models>
+    </group>
+    <group> <!-- TÉTIS -->
+      <translate time="5.5">
+        <point X="1.750000" Y="0" Z="-3.031089"/>
+        <point X="3.031089" Y="0" Z="-1.750000"/>
+        <point X="3.500000" Y="0" Z="0.000000"/>
+        <point X="3.031089" Y="0" Z="1.750000"/>
+        <point X="1.750000" Y="0" Z="3.031089"/>
+        <point X="0.000000" Y="0" Z="3.500000"/>
+        <point X="-1.750000" Y="0" Z="3.031089"/>
+        <point X="-3.031089" Y="0" Z="1.750000"/>
+        <point X="-3.500000" Y="0" Z="0.000000"/>
+        <point X="-3.031089" Y="0" Z="-1.750000"/>
+        <point X="-1.750000" Y="0" Z="-3.031089"/>
+        <point X="0.000000" Y="0" Z="-3.500000"/>
+      </translate>
+      <rotate time="5.5" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="makemake.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- URANO CONTROL POINT -->
+    <translate time="1433">
+      <point X="-152.500000" Y="0" Z="264.137748"/>
+      <point X="-264.137748" Y="0" Z="152.500000"/>
+      <point X="-305.000000" Y="0" Z="0.000000"/>
+      <point X="-264.137748" Y="0" Z="-152.500000"/>
+      <point X="-152.500000" Y="0" Z="-264.137748"/>
+      <point X="0.000000" Y="0" Z="-305.000000"/>
+      <point X="152.500000" Y="0" Z="-264.137748"/>
+      <point X="264.137748" Y="0" Z="-152.500000"/>
+      <point X="305.000000" Y="0" Z="0.000000"/>
+      <point X="264.137748" Y="0" Z="152.500000"/>
+      <point X="152.500000" Y="0" Z="264.137748"/>
+      <point X="0.000000" Y="0" Z="305.000000"/>
+    </translate>
+    <rotate angle="-97.77" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="2.91" Y="2.91" Z="2.91"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- URANO -->
+      <rotate time="1.5" axisX="0" axisY="1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="uranos.jpg"/>
+      </models>
+      <group> <!-- anel -->
+        <models>
+          <model file="anel" texture="urRing.jpg"/>
+        </models>
+      </group>
+    </group>
+    <group> <!-- ARIEL -->
+      <translate time="7">
+        <point X="-1.250000" Y="0" Z="2.165064"/>
+        <point X="-2.165064" Y="0" Z="1.250000"/>
+        <point X="-2.500000" Y="0" Z="0.000000"/>
+        <point X="-2.165064" Y="0" Z="-1.250000"/>
+        <point X="-1.250000" Y="0" Z="-2.165064"/>
+        <point X="0.000000" Y="0" Z="-2.500000"/>
+        <point X="1.250000" Y="0" Z="-2.165064"/>
+        <point X="2.165064" Y="0" Z="-1.250000"/>
+        <point X="2.500000" Y="0" Z="0.000000"/>
+        <point X="2.165064" Y="0" Z="1.250000"/>
+        <point X="1.250000" Y="0" Z="2.165064"/>
+        <point X="0.000000" Y="0" Z="2.500000"/>
+      </translate>
+      <rotate time="7" axisX="0" axisY="1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="haumea.jpg"/>
+      </models>
+    </group>
+    <group> <!-- PUCK -->
+      <translate time="2.5">
+        <point X="-2.598076" Y="0" Z="-1.500000"/>
+        <point X="-1.500000" Y="0" Z="-2.598076"/>
+        <point X="0.000000" Y="0" Z="-3.000000"/>
+        <point X="1.500000" Y="0" Z="-2.598076"/>
+        <point X="2.598076" Y="0" Z="-1.500000"/>
+        <point X="3.000000" Y="0" Z="0.000000"/>
+        <point X="2.598076" Y="0" Z="1.500000"/>
+        <point X="1.500000" Y="0" Z="2.598076"/>
+        <point X="0.000000" Y="0" Z="3.000000"/>
+        <point X="-1.500000" Y="0" Z="2.598076"/>
+        <point X="-2.598076" Y="0" Z="1.500000"/>
+        <point X="-3.000000" Y="0" Z="0.000000"/>
+      </translate>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="ceres.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- NEPTUNO CONTROL POINT -->
+    <translate time="3421">
+      <point X="-235.000000" Y="0" Z="407.031940"/>
+      <point X="-407.031940" Y="0" Z="235.000000"/>
+      <point X="-470.000000" Y="0" Z="0.000000"/>
+      <point X="-407.031940" Y="0" Z="-235.000000"/>
+      <point X="-235.000000" Y="0" Z="-407.031940"/>
+      <point X="0.000000" Y="0" Z="-470.000000"/>
+      <point X="235.000000" Y="0" Z="-407.031940"/>
+      <point X="407.031940" Y="0" Z="-235.000000"/>
+      <point X="470.000000" Y="0" Z="0.000000"/>
+      <point X="407.031940" Y="0" Z="235.000000"/>
+      <point X="235.000000" Y="0" Z="407.031940"/>
+      <point X="0.000000" Y="0" Z="470.000000"/>
+    </translate>
+    <rotate angle="-30" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="2.82" Y="2.82" Z="2.82"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- NEPTUNO -->
+      <rotate time="2" axisX="0" axisY="1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="neptune.jpg"/>
+      </models>
+    </group>
+    <group> <!-- TRITÃO -->
+      <translate time="16.5">
+        <point X="-0.750000" Y="0" Z="1.299038"/>
+        <point X="-1.299038" Y="0" Z="0.750000"/>
+        <point X="-1.500000" Y="0" Z="0.000000"/>
+        <point X="-1.299038" Y="0" Z="-0.750000"/>
+        <point X="-0.750000" Y="0" Z="-1.299038"/>
+        <point X="0.000000" Y="0" Z="-1.500000"/>
+        <point X="0.750000" Y="0" Z="-1.299038"/>
+        <point X="1.299038" Y="0" Z="-0.750000"/>
+        <point X="1.500000" Y="0" Z="0.000000"/>
+        <point X="1.299038" Y="0" Z="0.750000"/>
+        <point X="0.750000" Y="0" Z="1.299038"/>
+        <point X="0.000000" Y="0" Z="1.500000"/>
+      </translate>
+      <rotate time="16.5" axisX="0" axisY="-1" axisZ="0" />
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="makemake.jpg"/>
+      </models>
+    </group>
+    <group> <!-- LARISSA -->
+      <translate time="7">
+        <point X="-1.732051" Y="0" Z="-1.000000"/>
+        <point X="-1.000000" Y="0" Z="-1.732051"/>
+        <point X="0.000000" Y="0" Z="-2.000000"/>
+        <point X="1.000000" Y="0" Z="-1.732051"/>
+        <point X="1.732051" Y="0" Z="-1.000000"/>
+        <point X="2.000000" Y="0" Z="0.000000"/>
+        <point X="1.732051" Y="0" Z="1.000000"/>
+        <point X="1.000000" Y="0" Z="1.732051"/>
+        <point X="0.000000" Y="0" Z="2.000000"/>
+        <point X="-1.000000" Y="0" Z="1.732051"/>
+        <point X="-1.732051" Y="0" Z="1.000000"/>
+        <point X="-2.000000" Y="0" Z="0.000000"/>
+      </translate>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="lua" texture="haumea.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- PLUTO CONTROL POINT -->
+    <translate time="5150">
+      <point X="-250.000000" Y="0" Z="433.012702"/>
+      <point X="-433.012702" Y="0" Z="250.000000"/>
+      <point X="-500.000000" Y="0" Z="0.000000"/>
+      <point X="-433.012702" Y="0" Z="-250.000000"/>
+      <point X="-250.000000" Y="0" Z="-433.012702"/>
+      <point X="0.000000" Y="0" Z="-500.000000"/>
+      <point X="250.000000" Y="0" Z="-433.012702"/>
+      <point X="433.012702" Y="0" Z="-250.000000"/>
+      <point X="500.000000" Y="0" Z="0.000000"/>
+      <point X="433.012702" Y="0" Z="250.000000"/>
+      <point X="250.000000" Y="0" Z="433.012702"/>
+      <point X="0.000000" Y="0" Z="500.000000"/>
+    </translate>
+    <rotate angle="-120" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="0.14" Y="0.14" Z="0.14"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group> <!-- PLUTO -->
+      <rotate time="18" axisX="0" axisY="1" axisZ="0" />
+      <models>
+        <model file="planeta" texture="pluto.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- COMETA -->
+    <translate X="-272" Y="0" Z="0"/>
+    <rotate angle="55" axisX="1" axisY="0" axisZ="0"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group>
+      <translate time="10">
+        <point X="0.000000" Y="0" Z="80.000000"/>
+        <point X="122.020996" Y="0" Z="73.083633"/>
+        <point X="222.943451" Y="0" Z="53.530449"/>
+        <point X="285.316956" Y="0" Z="24.721357"/>
+        <point X="298.356567" Y="0" Z="-8.362281"/>
+        <point X="259.807617" Y="0" Z="-40.000004"/>
+        <point X="176.335556" Y="0" Z="-64.721359"/>
+        <point X="62.373482" Y="0" Z="-78.251808"/>
+        <point X="-62.373535" Y="0" Z="-78.251808"/>
+        <point X="-176.335602" Y="0" Z="-64.721352"/>
+        <point X="-259.807648" Y="0" Z="-39.999992"/>
+        <point X="-298.356567" Y="0" Z="-8.362267"/>
+        <point X="-285.316956" Y="0" Z="24.721371"/>
+        <point X="-222.943420" Y="0" Z="53.530457"/>
+        <point X="-122.020950" Y="0" Z="73.083641"/>
+      </translate>
+      <models>
+        <model file="teapot" texture="haumea.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- BACKGROUND -->
+    <translate X="620" Y="0" Z="0" />
+    <rotate angle="90" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="280" Y="280" Z="280"/>
+    <models>
+      <model file="plano" texture="ess.jpg" diffR="0.01" diffG="0.01" diffB="0.01"/>
+    </models>
+  </group>
+  <group> <!-- BACKGROUND -->
+    <translate X="-620" Y="0" Z="0" />
+    <rotate angle="270" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="280" Y="280" Z="280"/>
+    <models>
+      <model file="plano" texture="ess.jpg" diffR="0.01" diffG="0.01" diffB="0.01"/>
+    </models>
+  </group>
+  <group> <!-- BACKGROUND -->
+    <translate X="0" Y="0" Z="-620" />
+    <rotate angle="90" axisX="1" axisY="0" axisZ="0"/>
+    <scale X="280" Y="280" Z="280"/>
+    <models>
+      <model file="plano" texture="ess.jpg" diffR="0.01" diffG="0.01" diffB="0.01"/>
+    </models>
+  </group>
+  <group> <!-- BACKGROUND -->
+    <translate X="0" Y="0" Z="620" />
+    <rotate angle="270" axisX="1" axisY="0" axisZ="0"/>
+    <scale X="280" Y="280" Z="280"/>
+    <models>
+      <model file="plano" texture="ess.jpg" diffR="0.01" diffG="0.01" diffB="0.01"/>
+    </models>
+  </group>
+  <group> <!-- BACKGROUND -->
+    <translate X="0" Y="-620" Z="0" />
+    <scale X="280" Y="280" Z="280"/>
+    <models>
+      <model file="plano" texture="ess.jpg" diffR="0.01" diffG="0.01" diffB="0.01"/>
+    </models>
+  </group>
+  <group> <!-- BACKGROUND -->
+    <translate X="0" Y="620" Z="0" />
+    <rotate angle="180" axisX="0" axisY="0" axisZ="1"/>
+    <scale X="280" Y="280" Z="280"/>
+    <models>
+      <model file="plano" texture="ess.jpg" diffR="0.01" diffG="0.01" diffB="0.01"/>
+    </models>
+  </group>
+</scene>
+<!--
+  <group> COMETA
+    <translate X="-272" Y="0" Z="0"/>
+    <rotate angle="55" axisX="1" axisY="0" axisZ="0"/>
+    <models>
+      <model file="controlPoint"/>
+    </models>
+    <group>
+      <translate time="10">
+        <point X="0.000000" Y="0" Z="80.000000"/>
+        <point X="122.020996" Y="0" Z="73.083633"/>
+        <point X="222.943451" Y="0" Z="53.530449"/>
+        <point X="285.316956" Y="0" Z="24.721357"/>
+        <point X="298.356567" Y="0" Z="-8.362281"/>
+        <point X="259.807617" Y="0" Z="-40.000004"/>
+        <point X="176.335556" Y="0" Z="-64.721359"/>
+        <point X="62.373482" Y="0" Z="-78.251808"/>
+        <point X="-62.373535" Y="0" Z="-78.251808"/>
+        <point X="-176.335602" Y="0" Z="-64.721352"/>
+        <point X="-259.807648" Y="0" Z="-39.999992"/>
+        <point X="-298.356567" Y="0" Z="-8.362267"/>
+        <point X="-285.316956" Y="0" Z="24.721371"/>
+        <point X="-222.943420" Y="0" Z="53.530457"/>
+        <point X="-122.020950" Y="0" Z="73.083641"/>
+      </translate>
+      <models>
+        <model file="teapot"/>
+      </models>
+    </group>
+  </group>
+-->
+<!--
+<model file="cubo"/>
+<model file="plano"/>
+<model file="cone"/>
+<model file="esfera"/>
+
+EXception thrown at 0X00286185 in SOLARIS_UNITED_ENGINE.eXe: 0XC0000005: Access violation reading location 0X00000000. occurred
+-->

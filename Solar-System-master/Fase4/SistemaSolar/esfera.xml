@@ -1,0 +1,56 @@
+<scene>
+  <lights>
+    <light type="POINT" posX="23" posY="15" posZ="23"/>
+  </lights>
+  <group> <!-- BASE -->
+   <scale X="10" Y="10" Z="10"/>
+   <models>
+     <model file="plano" texture="Concrete.jpg"/>
+   </models>
+ </group>
+ <group> <!-- BASE -->
+   <translate X="-25" Y="25" Z="0" />
+   <scale X="10" Y="10" Z="10"/>
+   <rotate angle="270" axisX="0" axisY="0" axisZ="1"/>
+   <models>
+     <model file="plano" texture="Concrete.jpg"/>
+   </models>
+ </group>
+ <group> <!-- BASE -->
+   <translate X="0" Y="25" Z="-25"/>
+   <scale X="10" Y="10" Z="10"/>
+   <rotate angle="90" axisX="1" axisY="0" axisZ="0"/>
+   <models>
+     <model file="plano" texture="Concrete.jpg"/>
+   </models>
+ </group>
+  <group>
+    <translate X="23" Y="5" Z="23"/>
+    <rotate angle="90" axisX="1" axisY="0" axisZ="0"/>
+    <models>
+      <model file="stand" texture="Concrete.jpg"/>
+    </models>
+  </group>
+  <group>
+    <translate X="23" Y="10" Z="23"/>
+    <rotate angle="-90" axisX="1" axisY="0" axisZ="0"/>
+    <models>
+      <model file="controlPoint" texture="satRing.png"/>
+    </models>
+    <group>
+      <rotate angle="130" axisX="0" axisY="0" axisZ="1"/>
+      <scale X="0.5" Y="0.5" Z="0.5" />
+      <models>
+        <model file="teapot" texture="sky.jpg"/>
+      </models>
+    </group>
+  </group>
+  <group>
+     <translate X="0" Y="6" Z="0"/>
+     <rotate angle="45" axisX="0" axisY="1" axisZ="0"/>
+     <scale X="6" Y="6" Z="6" />
+     <models>
+       <model file="planeta" diffR="0.9" diffG="0.0" diffB="0.1" ambR="0.9" ambG="0.0" ambB="0.1" emR="0.0" emG="0.0" emB="0.0" specR="0.5" specG="0.5" specB="0.5" shine="32.0"/>
+     </models>
+   </group>
+</scene>
