@@ -1,0 +1,178 @@
+<scene>
+  <group> <!-- SOL -->
+    <scale X="20" Y="20" Z="20"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+  </group>
+  <group> <!-- MERCÚRIO -->
+    <translate X="26"/>
+    <scale X="0.28" Y="0.28" Z="0.28"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+  </group>
+  <group> <!-- VÉNUS -->
+    <translate X="-30.5"/>
+    <scale X="0.7" Y="0.7" Z="0.7"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+  </group>
+  <group> <!-- TERRA -->
+    <translate Z="35"/>
+    <scale X="0.73" Y="0.73" Z="0.73"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+    <group> <!-- LUA -->
+      <translate X="1.5"/>
+      <scale X="0.16" Y="0.16" Z="0.16"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- MARTE -->
+    <translate Z="-42.5"/>
+    <scale X="0.39" Y="0.39" Z="0.39"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+    <group> <!-- PHOBOS -->
+      <translate X="-1.5"/>
+      <scale X="0.16" Y="0.16" Z="0.16"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+    <group> <!-- DEIMOS -->
+      <translate Y="1.5"/>
+      <scale X="0.16" Y="0.16" Z="0.16"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- JÚPITER -->
+    <translate X="95"/>
+    <scale X="8.03" Y="8.03" Z="8.03"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+    <group> <!-- IO -->
+      <translate X="1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+    <group> <!-- EUROPA -->
+      <translate X="-1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+    <group> <!-- CALISTO -->
+      <translate Z="1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+    <group> <!-- GANIMEDES -->
+      <translate Z="-1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- SATURNO -->
+    <translate X="-162.5"/>
+    <scale X="6.69" Y="6.69" Z="6.69"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+    <group> <!-- MIMES -->
+      <translate X="-1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+    <group> <!-- ENCÉLADO -->
+      <translate Z="-1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+    <group> <!-- TÉTIS -->
+      <translate X="1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- URANO -->
+    <translate Z="305"/>
+    <scale X="2.91" Y="2.91" Z="2.91"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+    <group> <!-- ARIEL -->
+      <translate X="1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+    <group> <!-- PUCK -->
+      <translate X="-1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- NEPTUNO -->
+    <translate Z="-470"/>
+    <scale X="2.82" Y="2.82" Z="2.82"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+    <group> <!-- TRITÃO -->
+      <translate X="1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+    <group> <!-- LARISSA -->
+      <translate X="-1.5"/>
+      <scale X="0.10" Y="0.10" Z="0.10"/>
+      <models>
+        <model file="planeta.3d"/>
+      </models>
+    </group>
+  </group>
+  <group> <!-- PLUTO -->
+    <translate X="500"/>
+    <scale X="0.14" Y="0.14" Z="0.14"/>
+    <models>
+      <model file="planeta.3d"/>
+    </models>
+  </group>
+</scene>
+
+<!--
+<model file="cubo.3d"/>
+<model file="plano.3d"/>
+<model file="cone.3d"/>
+<model file="esfera.3d"/>
+
+Exception thrown at 0x00286185 in SOLARIS_UNITED_ENGINE.exe: 0xC0000005: Access violation reading location 0x00000000. occurred
+-->

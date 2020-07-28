@@ -1,0 +1,32 @@
+<scene>
+  <group> 
+  </group>
+  <group> <!-- COMETA -->
+    <rotate angle="55" axisX="1" axisY="0" axisZ="0"/>
+    <models>
+      <model file="controlPoint.3d"/>
+    </models>
+    <group>
+      <translate time="50">
+        <point X="0.000000" Y="5.000000" Z="0"/>
+        <point X="4.067367" Y="4.567727" Z="0"/>
+        <point X="7.431448" Y="3.345653" Z="0"/>
+        <point X="9.510565" Y="1.545085" Z="0"/>
+        <point X="9.945219" Y="-0.522643" Z="0"/>
+        <point X="8.660254" Y="-2.500000" Z="0"/>
+        <point X="5.877852" Y="-4.045085" Z="0"/>
+        <point X="2.079116" Y="-4.890738" Z="0"/>
+        <point X="-2.079118" Y="-4.890738" Z="0"/>
+        <point X="-5.877853" Y="-4.045084" Z="0"/>
+        <point X="-8.660254" Y="-2.500000" Z="0"/>
+        <point X="-9.945219" Y="-0.522642" Z="0"/>
+        <point X="-9.510565" Y="1.545086" Z="0"/>
+        <point X="-7.431447" Y="3.345654" Z="0"/>
+        <point X="-4.067365" Y="4.567728" Z="0"/>
+      </translate>
+      <models>
+        <model file="teapot.3d"/>
+      </models>
+    </group>
+  </group>
+</scene>
