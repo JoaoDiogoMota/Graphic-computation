@@ -14,7 +14,7 @@ This phase requires two applications: the __generator__, which purpose is to gen
 </scene>
 ```
 
-[Phase 1 report](https://github.com/13caroline/Solar-System/blob/master/Fase1/relat%C3%B3rio.pdf)
+[Phase 1 report](https://github.com/JoaoDiogoMota/Solar-System/blob/master/Fase1/Report.pdf)
 
 ##  Phase 2 - Geometric Transforms 
 
@@ -41,7 +41,7 @@ This phase is about creating __hierarchical scenes__ using geometric transforms.
 
 In this phase, the models are now drawn with **VBOs**, as opposed to immediate mode used in the previous phase.
 
-[Phase 2 report](https://github.com/13caroline/Solar-System/blob/master/Fase2/relat%C3%B3rio.pdf)
+[Phase 2 report](https://github.com/JoaoDiogoMota/Solar-System/blob/master/Fase2/Report.pdf)
 
 ## Phase 3 - Curves, Cubic Surfaces and VBOs
 
@@ -49,7 +49,7 @@ In this phase, the __generator__ must be able to create a new type of model base
 
 **Rotate** and **Translate** elements have been extended. The goal is to perform animations based on _Catmull-Rom cubic curves_, considering a set of points and the number of seconds to run the whole curve. 
 
-[Phase 3 report](https://github.com/13caroline/Solar-System/blob/master/Fase3/relat%C3%B3rio.pdf)
+[Phase 3 report](https://github.com/JoaoDiogoMota/Solar-System/blob/master/Fase3/Report.pdf)
 
 ## Phase 4 - Normals and Texture Coordinates
 
@@ -65,7 +65,7 @@ The light sources in the _xml configuration file_ are demonstrated below.
 </scene>
 ```
 
-[Phase 4 report](https://github.com/13caroline/Solar-System/blob/master/Fase4/relat%C3%B3rio.pdf)
+[Phase 4 report](https://github.com/JoaoDiogoMota/Solar-System/blob/master/Fase4/Report.pdf)
 
 ## Collaborators
 
